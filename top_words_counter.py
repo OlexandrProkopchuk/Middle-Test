@@ -8,7 +8,7 @@ def read_file(file_path):
 
 def clean_text(text):
     """Очищує текст від пунктуації та приводить до нижнього регістру."""
-    text = re.sub(r'[^\\w\\s]', '', text)
+    text = re.sub(r'[^\w\s]', '', text)  # Оновлено регулярний вираз
     return text.lower()
 
 def count_words(text):
